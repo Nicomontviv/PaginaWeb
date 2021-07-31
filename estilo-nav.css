@@ -1,0 +1,114 @@
+.body{
+	background-color: black;
+color:white;
+font-family: cursive;
+background: radial-gradient(circle,rgb(83, 82, 80), black);
+}
+
+
+.nav{
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 20px;
+	background-color: brown;
+	color: blanchedalmond;
+		
+}
+.nav__li{
+display: inline-block;
+padding: 30px;
+}
+.nav__li:hover{
+	color: burlywood;
+}
+
+.nav__li a {
+	color: blanchedalmond;
+	text-decoration: none;
+	width: 10px;
+	box-sizing: border-box;
+	text-align: center;
+
+}
+.nav__li a:hover{
+	color: burlywood;
+}
+
+.nav__responsive-ul{
+	display: none;
+	;
+}
+
+
+.nav__responsive-button-container{
+	position: absolute;
+	width: 100%;
+	font-size: 25px;
+	margin-top: -64px;
+	z-index: 100;
+}
+.nav__responsive-button{
+	float: right;
+	font-size: 25px;
+	padding: 6px 20px;
+	background-color: brown;
+	text-align: right;
+	width: 100%;
+}
+
+
+@media only screen and (max-width:500px){
+	.nav__ul{
+		display: none;
+	}
+	.nav__responsive-ul{
+		display:inline-block;
+		position:relative;
+		width:100% !important;
+		background-color:brown;
+		margin-top: 37px;
+		padding-top: 27px;
+		height: 70px;;
+	}
+	.nav{
+		height: auto;
+		width: auto;
+		display: inline-block;
+	}
+    
+	
+	.nav__responsive-li{
+		width: 100%;
+		display:inline-block;
+		
+	}
+	.nav__responsive-li a{
+		color: blanchedalmond;
+		font-size: 26px;
+		padding: 6px;
+		text-decoration: none;
+		
+	}
+	.nav__responsive-li i {
+		box-sizing: border-box;
+		text-align: center;
+		margin-right: 5px;
+		width:100%;
+		padding: 2px;
+	}
+	.nav__li-container{
+     position: relative;
+	 top:-1000px;
+	 height: 100px;
+	 transition: all 1s;
+	 z-index: 1;
+	 
+
+
+
+	}
+	.nav__responsive-ul:hover > .nav__li-container{
+		top: 0;
+	}
+	
+
+}
